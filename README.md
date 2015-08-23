@@ -11,6 +11,8 @@ with the hopefully easier to understand
 
     self.parent.some_method()
 
+Additionally, there's a further decorator, `bastard.recognizer`, that expects the to-be-used name of the parent as argument.
+
 See the enclosed `example.py` for how to use the module.
 
 ---
