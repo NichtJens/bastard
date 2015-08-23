@@ -1,6 +1,5 @@
 
 def recognized(cls):
-    setattr(cls, 'parent', lambda self: super(cls, self))
-    cls.parent = property(cls.parent)
+    setattr(cls, 'parent', property(lambda self: super(cls, self)))
     return cls
 
