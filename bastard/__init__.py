@@ -1,3 +1,3 @@
 
-from bastard import recognized
+from bastard import *
 
