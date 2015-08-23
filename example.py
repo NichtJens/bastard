@@ -7,6 +7,13 @@ class A(object):
     def f(self):
         print 'A.f'
 
+
+class S(A):
+    def f(self):
+        super(S, self).f()
+        print 'S.f'
+
+
 @recognized
 class B(A):
     def f(self):
@@ -14,6 +21,8 @@ class B(A):
         print 'B.f'
 
 
+
+S().f()
 B().f()
 
 
